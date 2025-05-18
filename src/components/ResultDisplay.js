@@ -5,7 +5,7 @@ const ResultDisplay = ({ result }) => {
     <div className="result">
       <h2>Classification Results</h2>
       <div className="result-item">
-        <span className="label">Animal:</span>
+        <span className="label">Gender:</span>
         <span className="value">{result.prediction}</span>
       </div>
       <div className="result-item">
