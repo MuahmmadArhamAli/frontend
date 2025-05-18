@@ -69,7 +69,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Animal Image Classifier</h1>
+      <h1>Gender Predictor</h1>
       <ImageUploader
         onUpload={handleImageUpload}
         disabled={isLoading}
