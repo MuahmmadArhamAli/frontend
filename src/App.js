@@ -30,10 +30,13 @@ function App() {
       const formData = new FormData();
       formData.append("file", imageFile);
 
-      const response = await fetch("http://localhost:5000/predict", {
-        method: "POST",
-        body: formData,
-      });
+      const response = await fetch(
+        "http://ai-lab-project-backend-production.up.railway.app/predict", // Ensure this URL is correct
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
 
       if (!response.ok) {
         let errorData;
