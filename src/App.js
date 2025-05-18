@@ -31,7 +31,7 @@ function App() {
       formData.append("file", imageFile);
 
       const response = await fetch(
-        "http://ai-lab-project-backend-production.up.railway.app/predict", // Ensure this URL is correct
+        "https://ai-lab-project-backend-production.up.railway.app/predict", // Ensure this URL is correct
         {
           method: "POST",
           body: formData,
